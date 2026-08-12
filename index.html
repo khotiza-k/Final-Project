@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Coffee Bar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>The Coffee Bar</h1>
+
+    <p>
+      Welcome to The Coffee Bar. Enjoy our delicious coffees,
+      desserts, and special drinks at affordable prices.
+    </p>
+
+    <h2>Our Menu</h2>
+
+    <div id="menu">
+      <div class="food">
+        <h3>Coffee</h3>
+        <p>Hot Coffee - 150 Tk</p>
+        <p>Cappuccino - 220 Tk</p>
+        <p>Latte - 200 Tk</p>
+      </div>
+
+      <div class="food">
+        <h3>Desserts</h3>
+        <p>Chocolate Cake - 250 Tk</p>
+        <p>Cheesecake - 300 Tk</p>
+        <p>Brownie - 180 Tk</p>
+      </div>
+
+      <div class="food">
+        <h3>Special Drinks</h3>
+        <p>Cold Coffee - 250 Tk</p>
+        <p>Chocolate Shake - 280 Tk</p>
+        <p>Strawberry Shake - 300 Tk</p>
+      </div>
+    </div>
+
+    <h2>Available Items and Prices</h2>
+
+    <table border="2" cellpadding="10">
+      <tr>
+        <th>Item Name</th>
+        <th>Category</th>
+        <th>Price</th>
+      </tr>
+
+      <tr>
+        <td>Hot Coffee</td>
+        <td>Coffee</td>
+        <td>150 Tk</td>
+      </tr>
+
+      <tr>
+        <td>Cappuccino</td>
+        <td>Coffee</td>
+        <td>220 Tk</td>
+      </tr>
+
+      <tr>
+        <td>Latte</td>
+        <td>Coffee</td>
+        <td>200 Tk</td>
+      </tr>
+
+      <tr>
+        <td>Chocolate Cake</td>
+        <td>Dessert</td>
+        <td>250 Tk</td>
+      </tr>
+
+      <tr>
+        <td>Cheesecake</td>
+        <td>Dessert</td>
+        <td>300 Tk</td>
+      </tr>
+
+      <tr>
+        <td>Brownie</td>
+        <td>Dessert</td>
+        <td>180 Tk</td>
+      </tr>
+
+      <tr>
+        <td>Cold Coffee</td>
+        <td>Special Drink</td>
+        <td>250 Tk</td>
+      </tr>
+
+      <tr>
+        <td>Chocolate Shake</td>
+        <td>Special Drink</td>
+        <td>280 Tk</td>
+      </tr>
+
+      <tr>
+        <td>Strawberry Shake</td>
+        <td>Special Drink</td>
+        <td>300 Tk</td>
+      </tr>
+    </table>
+
+    <h2>Place Your Order</h2>
+
+    <div id="form-div">
+      <form id="myForm">
+        <label>Your Name</label>
+        <input
+          type="text"
+          placeholder="Enter Your Name"
+          id="name"
+        />
+
+        <label>Choose Your Item</label>
+        <select id="chooseFood">
+          <option value="" selected>Choose Item</option>
+          <option value="Hot Coffee">Hot Coffee</option>
+          <option value="Cappuccino">Cappuccino</option>
+          <option value="Latte">Latte</option>
+          <option value="Chocolate Cake">Chocolate Cake</option>
+          <option value="Cheesecake">Cheesecake</option>
+          <option value="Brownie">Brownie</option>
+          <option value="Cold Coffee">Cold Coffee</option>
+          <option value="Chocolate Shake">Chocolate Shake</option>
+          <option value="Strawberry Shake">Strawberry Shake</option>
+        </select>
+
+        <label>Quantity</label>
+        <input
+          type="number"
+          placeholder="Enter Quantity"
+          id="quantity"
+        />
+
+        <div class="inputdiv">
+          <input
+            type="submit"
+            value="Place Order"
+            id="submitBtn"
+          />
+
+          <input
+            type="reset"
+            value="Reset"
+            id="resetBtn"
+          />
+        </div>
+      </form>
+
+      <div id="output-div">
+        <p id="output-title">Your Order Details</p>
+
+        <p id="output"></p>
+      </div>
+    </div>
+
+    <h2>Contact Us</h2>
+
+    <form id="contactUs">
+      <label>Your Name</label>
+      <br />
+      <input type="text" placeholder="Enter Your Name" />
+
+      <br />
+      <br />
+
+      <label>Email</label>
+      <br />
+      <input type="email" placeholder="Enter Your Email" />
+
+      <br />
+      <br />
+
+      <label>Message Us</label>
+      <br />
+      <textarea
+        placeholder="Write Your Message Here"
+        rows="4"
+      ></textarea>
+
+      <br />
+      <br />
+
+      <button id="btn">Submit Now</button>
+    </form>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
